@@ -6,9 +6,9 @@
 # Configuration
 chargehq_uri='https://api.chargehq.net/api/public/push-solar-data'
 
-# Add ChargeHQ api_key and envoy ip below and log_file_path location
+# Add Charge HQ api_key and envoy ip below and log_file_path location
 
-api_key=''             # Get this from ChargeHQ Application
+api_key=''             # Get this from Charge HQ Application
 envoy_username=''      # Your login username for Enphase
 envoy_password=''      # Your login password for Enphase
 envoy_serial_number='' # Your serial number for Enphase
@@ -24,12 +24,12 @@ get_jwt_token() {
   jwt_token=$(curl -sX POST "https://entrez.enphaseenergy.com/tokens" -H "Content-Type: application/json" -d "{\"session_id\": \"$session_id\", \"serial_num\": \"$envoy_serial_number\", \"username\": \"$envoy_username\"}")
 }
 
-# Function to push data to ChargeHQ
+# Function to push data to Charge HQ
 push_to_chargeHQ() {
   JSON_payload="{\"apiKey\":\"$api_key\",\"siteMeters\":{\"imported_kwh\":\"$imported_kwh\",\"exported_kwh\":\"$exported_kwh\",\"net_import_kw\":\"$net_import_kw\",\"consumption_kw\":\"$consumption_kw\",\"production_kw\":\"$production_kw\"}}"
   echo "$JSON_payload" >> "$log_file_path"
   curl -sX POST -H "Content-Type: application/json" -d "$JSON_payload" "$chargehq_uri" >/dev/null
-  echo "$(date "+%Y-%m-%d %H:%M:%S") Pushed to ChargeHQ" >> "$log_file_path"
+  echo "$(date "+%Y-%m-%d %H:%M:%S") Pushed to Charge HQ" >> "$log_file_path"
 }
 
 # Initial JWT token retrieval
