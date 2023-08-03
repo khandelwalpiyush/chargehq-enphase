@@ -1,10 +1,10 @@
 # Charge HQ + Enphase
 
 
-This simple script allows your to upload your local Enphase Solar Energy data to ChargeHQ application. It is an excellent application which allows you to charge your Tesla / EV with your excess solar being generated. App doesn't have direct integration with Enphase thus this script comes in handy. 
+This simple script allows your to upload your local Enphase Solar Energy data to Charge HQ application. It is an excellent application which allows you to charge your Tesla / EV with your excess solar being generated. App doesn't have direct integration with Enphase thus this script comes in handy. 
 
 
-**ChargeHQ:** https://chargehq.net
+**Charge HQ:** https://chargehq.net
 
 **Push API Integration:** https://chargehq.net/kb/push-api
 
@@ -20,9 +20,9 @@ It is a shell script which can be run on a windows / linux OS. Please change the
 
 
 ```
-# Add ChargeHQ api_key and envoy ip below and log_file_path location
+# Add Charge HQ api_key and envoy ip below and log_file_path location
 
-api_key=''             # Get this from ChargeHQ Application
+api_key=''             # Get this from Charge HQ Application
 envoy_username=''      # Your login username for Enphase
 envoy_password=''      # Your login password for Enphase
 envoy_serial_number='' # Your serial number for Enphase
@@ -36,9 +36,9 @@ log_file_path=''       # Log Location - easy for troubleshooting
 Example Data
 
 ```
-# Add ChargeHQ api_key and envoy ip below and log_file_path location
+# Add Charge HQ api_key and envoy ip below and log_file_path location
 
-api_key='51f1f67d-67f9-4a1b-bba8-5b82c7f752be' # Get this from ChargeHQ Application (Push API)
+api_key='51f1f67d-67f9-4a1b-bba8-5b82c7f752be' # Get this from Charge HQ Application (Push API)
 envoy_username='emailaddress@gmail.com' # Your login username for Enphase
 envoy_password='supersecretP@$$w0rd' # Your login password for Enphase
 envoy_serial_number='9836827386328632' # Your serial number for Enphase
@@ -57,4 +57,4 @@ The script needs to run as a task scheduler or cronjob / rc.local. Please google
 
 **Linux:** https://www.baeldung.com/linux/run-script-on-startup
 
-Once running, the script will **upload data to ChargeHQ every 30 seconds** per their recommendation.
+Once running, the script will **upload data to Charge HQ every 30 seconds** per their recommendation.
