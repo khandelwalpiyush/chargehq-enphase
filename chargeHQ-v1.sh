@@ -7,6 +7,7 @@
 chargehq_uri='https://api.chargehq.net/api/public/push-solar-data'
 
 # Add ChargeHQ api_key and envoy ip below and log_file_path location
+
 api_key=''             # Get this from ChargeHQ Application
 envoy_username=''      # Your login username for Enphase
 envoy_password=''      # Your login password for Enphase
