@@ -20,16 +20,32 @@ It is a shell script which can be run on a windows / linux OS. Please change the
 
 
 ```
-# Add ChargeHQ apiKey and envoy ip below and logfile location
+# Add ChargeHQ api_key and envoy ip below and log_file_path location
 
-apiKey='' # Get this from ChargeHQ Application (Push API)
-envoy_username='' # Your login username for Enphase
-envoy_password='' # Your login password for Enphase
+api_key=''             # Get this from ChargeHQ Application
+envoy_username=''      # Your login username for Enphase
+envoy_password=''      # Your login password for Enphase
 envoy_serial_number='' # Your serial number for Enphase
-envoy_local_ip='' # Your local IP address for Enphase
-LOGFILE="/home/pi/chargehq/chargehq.log" # Log Location - easy for troubleshooting
+envoy_local_ip=''      # Your local IP address for Enphase
+log_file_path=''       # Log Location - easy for troubleshooting
 
-## To not log simply delete all reference to '>> $LOGFILE'
+## To not log simply delete all reference to '>> $log_file_path'
+
+```
+
+Example Data
+
+```
+# Add ChargeHQ api_key and envoy ip below and log_file_path location
+
+api_key='51f1f67d-67f9-4a1b-bba8-5b82c7f752be' # Get this from ChargeHQ Application (Push API)
+envoy_username='emailaddress@gmail.com' # Your login username for Enphase
+envoy_password='supersecretP@$$w0rd' # Your login password for Enphase
+envoy_serial_number='9836827386328632' # Your serial number for Enphase
+envoy_local_ip='192.168.1.1' # Your local IP address for Enphase
+log_file_path='/home/pi/chargehq/chargehq.log' # Log Location - easy for troubleshooting
+
+## To not log simply delete all reference to '>> $log_file_path'
 
 ```
 
