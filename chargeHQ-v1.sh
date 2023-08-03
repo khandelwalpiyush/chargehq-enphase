@@ -60,5 +60,5 @@ while true; do
 
   push_to_chargeHQ
 
-  sleep 5
+  sleep 30 #Will upload data every 30 seconds
 done
