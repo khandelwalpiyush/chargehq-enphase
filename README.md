@@ -38,3 +38,5 @@ The script needs to run as a task scheduler or cronjob / rc.local. Please google
 **Windows:** https://o365reports.com/2019/08/02/schedule-powershell-script-task-scheduler/
 
 **Linux:** https://www.baeldung.com/linux/run-script-on-startup
+
+Once running, the script will upload data to ChargeHQ every 30 seconds
