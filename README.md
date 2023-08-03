@@ -10,11 +10,11 @@ This simple script allows your to upload your local Enphase Solar Energy data to
 
 **Enphase:** https://enphase.com/en-au
 
+## Script Details
 
-This script works with v7.x firmware of Enphase which needs login details to generate a JWT token. Although the expiry is long, it allows to renew it when expired.
+This script works with v7.x firmware of Enphase which needs login details to generate a JWT token. Although the expiry is long, it should automatically renew token when expired.
 
 **Tested on:** D7.6.175 Enphase + Raspberry Pi
-
 
 It is a shell script which can be run on a windows / linux OS. Please change the following section
 
@@ -33,10 +33,12 @@ LOGFILE="/home/pi/chargehq/chargehq.log" # Log Location - easy for troubleshooti
 
 ```
 
+## Automation
+
 The script needs to run as a task scheduler or cronjob / rc.local. Please google for various options. Below links are just example for reference
 
 **Windows:** https://o365reports.com/2019/08/02/schedule-powershell-script-task-scheduler/
 
 **Linux:** https://www.baeldung.com/linux/run-script-on-startup
 
-Once running, the script will upload data to ChargeHQ every 30 seconds
+Once running, the script will **upload data to ChargeHQ every 30 seconds** per their recommendation.
