@@ -14,7 +14,7 @@ This simple script allows your to upload your local Enphase Solar Energy data to
 
 This script works with v7.x firmware of Enphase which needs login details to generate a JWT token. Although the expiry is long, it should automatically renew token when expired.
 
-**Tested on:** D7.6.175 Enphase + Raspberry Pi
+**Tested on:** D7.6.175 Enphase + Raspberry Pi. Reported working on [Envoy Firmware D8.2.114](https://github.com/khandelwalpiyush/chargehq-enphase/issues/1) as well
 
 It is a shell script which can be run on a windows / linux OS. Please change the following section
 
